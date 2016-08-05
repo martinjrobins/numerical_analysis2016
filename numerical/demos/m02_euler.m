@@ -22,10 +22,9 @@ plot(tt, exp(a*tt), 'k-');  % exact solution
 grid on
 xlabel('t'); ylabel('u');
 
-
 for n = 1:numsteps
   t = k*(n-1);
-  vnew = v + k*f(t, v);
+  vnew = v + k*f(t,v);
 
   plot(t+k, vnew, 'r.', ms, 20)
   pause

@@ -16,6 +16,8 @@ e = ones(N,1);
 H = spdiags([-e  4*e  -6*e  4*e  -e], [-2 -1 0 1 2], N,N);
 H = 1/h^4 * H;
 
+k*eigs(H)
+
 %% BCs
 % to do perodic we would have various corner terms to fill in...
 % Or here's a trick: build the Laplacian and square it

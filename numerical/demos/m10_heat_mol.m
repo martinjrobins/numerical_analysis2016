@@ -23,7 +23,7 @@ b = 1/h^2;
 main = a*sparse(ones(N,1));
 off  = b*sparse(ones(N-1,1));
 L = diag(main) + diag(off,1) + diag(off,-1);
-%L(1,end) = b; L(end,1) = b;  %  uncomment for periodic BCs
+L(1,end) = b; L(end,1) = b;  %  uncomment for periodic BCs
 
 Tf = 1;
 % adjust either final time or time-step to have integer steps

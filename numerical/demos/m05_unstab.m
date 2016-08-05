@@ -26,7 +26,7 @@ vold = u0;
 
 %% this multistep method is not self starting
 % try forward Euler
-%v = vold + k*f(0,v);
+%v = vold + k*f(0,vold);
 % or use the exact soln
 v = exp(lambda*k);
 

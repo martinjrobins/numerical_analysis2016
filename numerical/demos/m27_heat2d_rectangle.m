@@ -43,6 +43,8 @@ I = speye(size(L));
 figure(1); clf;
 spy(L)
 % reproduce matrix in lectures
+h^2*full(Dx)
 h^2*full(Dxx)
+h^2*full(Dy)
 h^2*full(Dyy)
 h^2*full(L)
